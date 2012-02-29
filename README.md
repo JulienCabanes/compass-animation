@@ -40,7 +40,7 @@ This plugin looks cool but it doesn't make use of default specs values and it un
 
 Instead, those mixins will only rely on ```$experimental-support-for-vendor``` variables. So, if your experimental support is set for every browsers, those mixins will output prefixed ```@keyframes``` and ```animation-*``` properties for those browsers, not only the ones supporting CSS Animations today.
 
-This is a more **future-proof** way of doing. For instance, Opera doesn't currently support CSS Animations but it's coming in a [near future](http://caniuse.com/#search=keyframe).
+This is a more **future-proof** way of doing. For instance, Opera doesn't currently support CSS Animations but it's coming in a [near future](http://caniuse.com/#search=keyframe). With those mixins, you won't have to update your code tomorrow…
 
 ### So no built-in bounce and fade ?
 Nope. Only CSS Animations according to the specs, no sugar, like my coffee.
