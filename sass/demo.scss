@@ -1,0 +1,50 @@
+@import "compass/css3", "_animations";
+
+$experimental-support-for-khtml: false;
+
+@include keyframes(demo-1) {
+	from {
+		margin-left: 100px;
+	}
+	
+	50% {
+		margin-left: 200px;
+	}
+	
+	to {
+		margin-left: 100px;
+	}
+}
+
+
+@include keyframes(demo-2) {
+	from {
+		@include rotateZ(-30deg);
+	}
+	
+	50% {
+		@include rotateZ(30deg);
+	}
+	
+	to {
+		@include rotateZ(-30deg);
+	}
+}
+
+div {
+	margin-top: 80px;
+	margin-left: 150px;
+	padding: 10px;
+	width: 200px;
+	font-size: 24px;
+	text-align: center;
+	background: #DDD;
+}
+
+#demo-1 {
+	@include animation(demo-1 2s linear infinite);	
+}
+
+#demo-2 {
+	@include animation(demo-2 2s linear infinite);	
+}
