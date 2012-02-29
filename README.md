@@ -42,7 +42,7 @@ Instead, those mixins will only rely on ```$experimental-support-for-vendor``` v
 
 This is a more **future-proof** way of doing. For instance, Opera doesn't currently support CSS Animations but it's coming in a [near future](http://caniuse.com/#search=keyframe). With those mixins, you won't have to update your code tomorrow…
 
-### So no built-in bounce and fade ?
+### So no built-in *Bounce* and *Fade* FX ?
 Nope. Only CSS Animations according to the specs, no sugar, like my coffee.
 
 You like sugar ? Well.. I didn't test myself but I'm pretty sure you can use the [animate](https://github.com/ericam/compass-animation/tree/master/stylesheets/animation/animate) part of the plugin as animations mixins have the same names. The benefit of getting rid of the core part of this plugin is all about prefixing, keep reading…
