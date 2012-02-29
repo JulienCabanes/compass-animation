@@ -1,4 +1,4 @@
-@-moz-keyframes demo-1 {
+@-moz-keyframes anim-1 {
   from {
     margin-left: 100px;
   }
@@ -12,7 +12,7 @@
   }
 }
 
-@-webkit-keyframes demo-1 {
+@-webkit-keyframes anim-1 {
   from {
     margin-left: 100px;
   }
@@ -26,7 +26,7 @@
   }
 }
 
-@-o-keyframes demo-1 {
+@-o-keyframes anim-1 {
   from {
     margin-left: 100px;
   }
@@ -40,7 +40,7 @@
   }
 }
 
-@-ms-keyframes demo-1 {
+@-ms-keyframes anim-1 {
   from {
     margin-left: 100px;
   }
@@ -54,7 +54,7 @@
   }
 }
 
-@keyframes demo-1 {
+@keyframes anim-1 {
   from {
     margin-left: 100px;
   }
@@ -68,7 +68,7 @@
   }
 }
 
-@-moz-keyframes demo-2 {
+@-moz-keyframes anim-2 {
   from {
     -moz-transform: rotate(-30deg);
     transform: rotate(-30deg);
@@ -85,7 +85,7 @@
   }
 }
 
-@-webkit-keyframes demo-2 {
+@-webkit-keyframes anim-2 {
   from {
     -webkit-transform: rotate(-30deg);
     transform: rotate(-30deg);
@@ -102,7 +102,7 @@
   }
 }
 
-@-o-keyframes demo-2 {
+@-o-keyframes anim-2 {
   from {
     -o-transform: rotate(-30deg);
     transform: rotate(-30deg);
@@ -119,7 +119,7 @@
   }
 }
 
-@-ms-keyframes demo-2 {
+@-ms-keyframes anim-2 {
   from {
     -ms-transform: rotate(-30deg);
     transform: rotate(-30deg);
@@ -136,7 +136,7 @@
   }
 }
 
-@keyframes demo-2 {
+@keyframes anim-2 {
   from {
     -moz-transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
@@ -173,17 +173,33 @@ div {
 }
 
 #demo-1 {
-  -moz-animation: demo-1 2s linear infinite;
-  -webkit-animation: demo-1 2s linear infinite;
-  -o-animation: demo-1 2s linear infinite;
-  -ms-animation: demo-1 2s linear infinite;
-  animation: demo-1 2s linear infinite;
+  -moz-animation: anim-1 2s linear infinite;
+  -webkit-animation: anim-1 2s linear infinite;
+  -o-animation: anim-1 2s linear infinite;
+  -ms-animation: anim-1 2s linear infinite;
+  animation: anim-1 2s linear infinite;
 }
 
 #demo-2 {
-  -moz-animation: demo-2 2s linear infinite;
-  -webkit-animation: demo-2 2s linear infinite;
-  -o-animation: demo-2 2s linear infinite;
-  -ms-animation: demo-2 2s linear infinite;
-  animation: demo-2 2s linear infinite;
+  -moz-animation: anim-2 2s linear infinite;
+  -webkit-animation: anim-2 2s linear infinite;
+  -o-animation: anim-2 2s linear infinite;
+  -ms-animation: anim-2 2s linear infinite;
+  animation: anim-2 2s linear infinite;
+}
+
+#demo-3 {
+  -moz-animation: anim-1 1s ease infinite, anim-2 2s linear infinite;
+  -webkit-animation: anim-1 1s ease infinite, anim-2 2s linear infinite;
+  -o-animation: anim-1 1s ease infinite, anim-2 2s linear infinite;
+  -ms-animation: anim-1 1s ease infinite, anim-2 2s linear infinite;
+  animation: anim-1 1s ease infinite, anim-2 2s linear infinite;
+}
+
+#demo-4 {
+  -moz-animation: anim-2 10s ease 0 infinite normal;
+  -webkit-animation: anim-2 10s ease 0 infinite normal;
+  -o-animation: anim-2 10s ease 0 infinite normal;
+  -ms-animation: anim-2 10s ease 0 infinite normal;
+  animation: anim-2 10s ease 0 infinite normal;
 }
