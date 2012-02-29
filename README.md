@@ -1,6 +1,6 @@
 # Compass CSS Animation Mixins
 
-Requirements : Make sure your Sass version is *3.2+*
+Requirements : Make sure your Sass version is **3.2+**
 
 Those Compass mixins allows you to play with CSS Animations stuffs like ```@keyframes``` and all…
 
@@ -36,7 +36,7 @@ If you're curious and demanding, it couldn't be merged in one file because of so
 It seems like but it's not a fork from [this plugin](https://github.com/ericam/compass-animation).
 
 ### Prefixing the good way
-This plugin looks cool but it doesn't make use of default specs values and it unfortunately does something I disagree with : it considers *actual* browser support for prefixing.
+This plugin looks cool but it doesn't make use of default specs values and it unfortunately does something I disagree with : it considers **actual** browser support for prefixing.
 
 Instead, those mixins will only rely on ```$experimental-support-for-vendor``` variables. So, if your experimental support is set for every browsers, those mixins will output prefixed ```@keyframes``` and ```animation-*``` properties for those browsers, not only the ones supporting CSS Animations today.
 
@@ -48,7 +48,7 @@ Nope. Only CSS Animations according to the specs, no sugar, like my coffee.
 You like sugar ? Well.. I didn't test myself but I'm pretty sure you can use the [animate](https://github.com/ericam/compass-animation/tree/master/stylesheets/animation/animate) part of the plugin as animations mixins have the same names. The benefit of getting rid of the core part of this plugin is all about prefixing, keep reading…
 
 ## Scoped prefixing
-The *coolest* feature is something I called "scoped prefixing". The output from a prefixed animation like ```@-moz-keyframes``` will only contain ```-moz-``` prefixed properties, no ```-webkit-transform``` as it's useless. Avoiding CSS bloat is always good.
+The **coolest** feature is something I called "scoped prefixing". The output from a prefixed animation like ```@-moz-keyframes``` will only contain ```-moz-``` prefixed properties, no ```-webkit-transform``` as it's useless. Avoiding CSS bloat is always good.
 
 ## What's next
 Tests are coming.
